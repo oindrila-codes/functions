@@ -1,0 +1,9 @@
+def neighbouring_zeroes(*args):
+    counter = 0
+    for n in args:
+        if args[counter] == 0 and args[counter + 1]== 0:
+            return True
+        else:
+            counter += 1
+    return False
+print(neighbouring_zeroes(5,4,0,0,1,3,9,8,7,2,2,))
